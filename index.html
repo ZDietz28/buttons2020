@@ -9,6 +9,16 @@
     <meta name="author" content="ohiofi">
 
     <style>
+      img {
+        width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+      }
+      img.Juan {
+        display: none;
+      }
+      
 
 
 
@@ -19,6 +29,21 @@
 
   </head>
   <body>
+    <h1 id="h1">Find the button that makes the background RED</h1>
+    <img class="Juan" id="img1" src="https://12-buttons-game.colegermaine.repl.co/Images/Juan.jpg" alt="Horse Juan">
+    <p id="p1">Watch me change</p>
+    <button type="button" onClick="displayJuan()">Press to see Juan</button>
+    <button type="button" onClick="changeBackRed()">What does this do?</button>
+    <button type="button" onClick="changeParagraph()">Click me!</button>
+    <button type="button" onClick="changeP1()">I will change something</button>
+    <button type="button" onClick="changeH1()">Bruh</button>
+    <button type="button" onClick="changeP2()">Bye</button>
+    <button type="button" onClick="changeP3()">I'm back</button>
+    <button type="button" onClick="sizeJuan()">Small</button>
+    <button type="button" onClick="sizeJuan2()">Big</button>
+    <button type="button" onClick="changeFontH1()">The Best Font</button>
+    <button type="button" onClick="higlightH1()">Watch out</button>
+    <button type="button" onClick="changeBackBlue()">Ok</button>
 
 
 
@@ -26,6 +51,42 @@
 
 
     <script>
+      function displayJuan() {
+      document.getElementById('img1').style.display='block';
+    }
+    function changeBackRed() {
+      document.body.style='background-color: Red';
+    }
+    function changeParagraph() {
+      document.getElementById("p1").innerHTML = "I changed";
+    }
+    function changeP1() {
+      document.getElementById('p1').style.color = 'orange';
+    }
+    function changeH1() {
+      document.getElementById('h1').style.color = 'brown';
+    }
+    function changeP2() {
+      document.getElementById('p1').style.display='none';
+    }
+    function changeP3() {
+      document.getElementById('p1').style.display='block';
+    }
+    function sizeJuan() {
+      document.getElementById('img1').style.width='50px';
+    }
+    function sizeJuan2() {
+      document.getElementById('img1').style.width='1000px';
+    }
+    function changeFontH1() {
+      document.getElementById('h1').style='font-family: Comic Sans MS, cursive, sans-serif';
+    }
+    function higlightH1() {
+      document.getElementById('h1').style='background-color: yellow; font-family: Comic Sans MS, cursive, sans-serif;';
+    }
+    function changeBackBlue() {
+      document.body.style='background-color: blue';
+    }
 
 
 
