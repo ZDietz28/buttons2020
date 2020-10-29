@@ -28,7 +28,7 @@
     </style>
 
   </head>
-  <body>
+  <body style= background-color:"none">
     <h1 id="h1">Find the button that makes the background RED</h1>
     <img class="Juan" id="img1" src="https://12-buttons-game.colegermaine.repl.co/Images/Juan.jpg" alt="Horse Juan">
     <p id="p1">Watch me change</p>
@@ -44,7 +44,20 @@
     <button type="button" onClick="changeFontH1()">The Best Font</button>
     <button type="button" onClick="higlightH1()">Watch out</button>
     <button type="button" onClick="changeBackBlue()">Ok</button>
-
+    
+    <img src="375x211_mobile_allStars.jpg" alt='mario' id='pic' style= display:none>
+    <button onclick="document.getElementById('pic').style.display='block';">Click me</button>
+    <button onclick="document.body.style='background-color:red;'">Click me</button>
+    <button onclick="document.getElementById('Head').style.width='5px';">Click me</button>
+    <button onclick="alert()" class=buttonRed>Click me</button>
+    <button id='size' style="padding: 10px" onclick="document.getElementById('size').style.padding='1px';">Click me</button>
+    <button id="position" onclick="document.getElementById('position').style.position='relative';" class="position">Click me</button>
+    <button id="rotate" onclick="document.getElementById('rotate').style.transform= 'rotate(-20deg)';">Click me</button>
+    <button id="3drotate" onclick="document.getElementById('3drotate').style.transform= 'rotateX(150deg)';">Click me</button>
+    <button onclick="document.body.style='background-color:black;'">Click me</button>
+    <button id='sizev2' style="padding: 30px" onclick="document.getElementById('sizev2').style.padding='1px';">Click me</button>
+    <button onclick="document.body.style='background-color:blue;'">Click me</button>
+    <button onclick="document.body.style='background-color:green;'">Click me</button>
 
 
 
