@@ -18,7 +18,30 @@
       img.Juan {
         display: none;
       }
-      
+      #hidden1 {
+			display: none;
+		}
+    	#hidden2 {
+			display: none;
+		}
+    	#hidden3 {
+			opacity:0;
+		}
+     	#hidden4 {
+			opacity:0;
+		}
+
+     	#Hacktober {
+			display:none;
+		}
+  
+    .block{
+      display:block;
+    }
+    
+    #report {
+      display:none;
+    }
 
 
 
@@ -29,6 +52,9 @@
 
   </head>
   <body style= background-color:"none">
+    <a href="https://github.com/BradleyCodeU/munchhilliard" id="Hacktober">Click me to get your pull requests in!</a>
+		<img src="https://repl.it/@TreFoley/12-Buttons-1#EmergencyMeeting.jpeg" alt="Emergency Meeting" id="report" widith="600px">
+    
     <h1 id="h1">Find the button that makes the background RED</h1>
     <img class="Juan" id="img1" src="https://12-buttons-game.colegermaine.repl.co/Images/Juan.jpg" alt="Horse Juan">
     <p id="p1">Watch me change</p>
@@ -59,7 +85,32 @@
     <button onclick="document.body.style='background-color:blue;'">Click me</button>
     <button onclick="document.body.style='background-color:green;'">Click me</button>
 
+    <img src="https://repl.it/@TreFoley/12-Buttons-1#thumbsUp.png" alt="Thumbs up" id="hidden3">
 
+  <button type="button" onclick="showOne()" class="block">Im a button</button>
+
+	<button type="button" id="hidden1" onclick="showTwo()" >Click ME!</button>
+
+  <button type="button" id="hidden2" onclick="showImage()" >Don't Click</button>
+  
+  <button type="button"  onclick="backgroundBlue()" class="block">Click it</button>
+
+  <button type="button" onclick="backgroundPurple()" class="block">Click One</button>
+
+  <button type="button"  onclick="backgroundRed()" class="block">You gonna click?</button>
+
+  <button type="button"  onclick="showHacktober()" class="block">Did you get your pull requests in yet?</button>
+
+  <button type="button" class="block" onclick='document.getElementById("heading").innerHTML = "Oh cool now its different"'>Is this a button?</button>
+
+  <button type="button"  onclick="showText()" class="block">Hacktober?</button>
+
+  <button type="button"  onclick="report()" class="block">emergency meeting</button>
+
+  <button type="button"  onclick="backgroundWhite()" class="block">Woah...</button>
+
+
+  <button type="button" class="block" onclick='document.getElementById("heading").innerHTML = "You submit your pull requests?"'>Don't do it</button>
 
 
 
@@ -100,6 +151,38 @@
     function changeBackBlue() {
       document.body.style='background-color: blue';
     }
+     function backgroundRed() {   
+      document.body.style.backgroundColor= "red";
+     }
+
+     function backgroundBlue() {   
+      document.body.style.backgroundColor= "blue";
+     }
+     function backgroundPurple() {   
+       document.body.style.backgroundColor= "purple";
+     }
+     function backgroundWhite() {   
+      document.body.style.backgroundColor= "white";
+     }
+     function showOne() {   
+      document.getElementById('hidden1').style.display="block";
+     }
+     function showTwo() {   
+      document.getElementById('hidden2').style.display="block";
+     }
+     function showImage() {   
+      document.getElementById('hidden3').style.opacity="0.2";
+     }
+     function showText() {   
+      document.getElementById('hidden4').style.opacity="0.5";
+     }
+     function showHacktober() {   
+      document.getElementById('Hacktober').style.display="block";
+     }
+
+     function report() {   
+      document.getElementById('report').style.display="inline";
+     }
 
 
 
