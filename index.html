@@ -43,8 +43,10 @@
       display:none;
     }
 
-
-
+    @keyframes spin {
+	    from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}  
+    }
 
 
 
@@ -108,6 +110,8 @@
   <button type="button"  onclick="report()" class="block">emergency meeting</button>
 
   <button type="button"  onclick="backgroundWhite()" class="block">Woah...</button>
+	  
+	  <button type="button" onclick="spin()" class="block">speen</button>
 
 
   <button type="button" class="block" onclick='document.getElementById("heading").innerHTML = "You submit your pull requests?"'>Don't do it</button>
@@ -115,6 +119,7 @@
 
 
     <script>
+	
       function displayJuan() {
       document.getElementById('img1').style.display='block';
     }
@@ -183,7 +188,9 @@
      function report() {   
       document.getElementById('report').style.display="inline";
      }
-
+     function spin() {
+           document.body.style.animation="spin 3s";
+     }
 
 
 
