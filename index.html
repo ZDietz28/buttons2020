@@ -48,7 +48,23 @@
   to {transform:rotate(360deg);}  
     }
 
+#cow {
+  display: none;
 
+}
+
+#bug{
+  display: inline;
+}
+
+#button{
+  display: inline;
+}
+
+
+#mine{
+  display: none;
+}
 
     </style>
 
@@ -116,8 +132,39 @@
 
   <button type="button" class="block" onclick='document.getElementById("heading").innerHTML = "You submit your pull requests?"'>Don't do it</button>
 
+<h1 id="title">Click the buttons that turn this text red, with a large font, and the background is grey 
+  </h1>
 
 
+<img src= "cow.jpg" alt='Dancing cow' id="cow";>
+
+<button onclick="document.getElementById('title').style='color:red ;' ">Button 1 </button>
+<button onclick="document.body.style='background-color:red;' ">Button 2 </button>
+<button onclick="document.getElementById('title').style='color:purple ;' ">Button 3 </button>
+<button onclick="document.body.style='background-color:yellow;' ">Button 4 </button>
+<button onclick="document.body.style='background-color:green;' ">Button 5 </button>
+<button  onclick="document.getElementById('bug').style.display='none';">Button 6 </button>
+
+<img src="minecraft.jpg" alt= 'cursed minecraft pic' id="mine">
+
+<button id="button" onclick="document.getElementById('button').style.display='none';">Button 7 </button>
+<button class='button' onclick="document.body.style='background-color:grey;' ">Button 8 </button> 
+<button class='button' onclick="document.body.style='background-color:red;' ">Button 9 </button>
+<button class='button' onclick="document.getElementById('cow').style.display='inline' ;">Button 10 </button>
+<button class='button' onclick="document.body.style='background-color:blue;' ">Button 11 </button>
+<button class='button' onclick="document.getElementById('mine').style.display='inline' ">Button 12 </button>
+  
+  
+
+  <img src="stick bug.jpg" alt=" get stick bugged lol" id='bug'>
+  
+
+	  
+	  
+	  
+	  
+	  
+	  
     <script>
 	
       function displayJuan() {
