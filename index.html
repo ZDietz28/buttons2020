@@ -158,6 +158,106 @@
 
   <img src="stick bug.jpg" alt=" get stick bugged lol" id='bug'>
   
+<h1 id="theOnlyHeadingLol"> Find the button that makes the background RED </h1>
+
+    <img src="elon.jpg" alt="elon musk" style="display:none" id="muskMan">
+
+    <p id="notImposter" style="display:none"> 
+            . 　　　。　　　　•　 　ﾟ　　。 　　.<br>
+<br>
+        　　　.　　　 　　.　　　　　。　　 。　. 　<br>
+<br>
+        .　　 。　　　　　 ඞ 。 . 　　 • 　　　　•<br>
+<br>
+        　　ﾟ　　 Green was not an Impostor.　 。　.<br>
+<br>
+        　　'　　　 1 Impostor remains 　 　　。<br>
+<br>
+        　　ﾟ　　　.　　　. ,　　　　.　 .<br>
+    </p>
+
+ <p id="theImposter" style="display:none"> 
+            . 　　　。　　　　•　 　ﾟ　　。 　　.<br>
+<br>
+        　　　.　　　 　　.　　　　　。　　 。　. 　<br>
+<br>
+        .　　 。　　　　　 ඞ 。 . 　　 • 　　　　•<br>
+<br>
+        　　ﾟ　　 Red was an Impostor.　 。　.<br>
+<br>
+        　　'　　　 0 Impostors remain 　 　　。<br>
+<br>
+        　　ﾟ　　　.　　　. ,　　　　.　 .<br>
+    </p>
+
+    <script>
+      function itsThisOne() {
+        document.body.style.backgroundColor='Red';
+        document.getElementById('itsThisOneTrustMe').innerHTML='I told you it was this one'
+        document.getElementById('voteGreen').style.display='none'
+        document.getElementById('notMe').style.display='none'
+        document.getElementById('goAway').style.display='none'
+        document.getElementById('iLikeOrange').style.display='none'
+        document.getElementById('duck').style.display='none'
+        document.getElementById('elonMusk').style.display='none'
+        document.getElementById('redVented').style.display='none'
+        document.getElementById('purple').style.display='none'
+        document.getElementById('iDidTasks').style.display='none'
+        document.getElementById('myCookie').style.display='none'
+        document.getElementById('winGame').style.display='none'
+        document.getElementById('muskMan').style.display='none'
+        document.getElementById('notImposter').style.display='none'
+        document.getElementById('theImposter').style.display='none'
+        document.getElementById("theOnlyHeadingLol").innerHTML = "You won! Nice.";
+      }
+      function iDidTasks() {
+        document.body.style.backgroundColor='Green';
+        document.getElementById('iDidTasks').innerHTML='You did your tasks'
+      }
+      function youLost() {
+        document.getElementById('voteGreen').style.display='none'
+        document.getElementById('notMe').style.display='none'
+        document.getElementById('goAway').style.display='none'
+        document.getElementById('iLikeOrange').style.display='none'
+        document.getElementById('itsThisOneTrustMe').style.display='none'
+        document.getElementById('duck').style.display='none'
+        document.getElementById('elonMusk').style.display='none'
+        document.getElementById('redVented').style.display='none'
+        document.getElementById('purple').style.display='none'
+        document.getElementById('iDidTasks').style.display='none'
+        document.getElementById('myCookie').style.display='none'
+        document.getElementById('winGame').style.display='none'
+        document.getElementById('muskMan').style.display='none'
+        document.getElementById('notImposter').style.display='none'
+        document.getElementById('theImposter').style.display='none'
+        document.getElementById("theOnlyHeadingLol").innerHTML = "You lost LOL";
+        document.body.style.backgroundColor='Brown';
+      }
+    </script>
+
+    <button id="voteGreen" onclick="document.getElementById('notImposter').style.display='inline'"> Vote out green </button>
+
+    <button id="notMe" onclick="document.body.style.backgroundColor='Blue'"> Not me </button>
+
+    <button id="goAway" onclick="document.getElementById('goAway').style.margin='200px'"> Get out of my way </button>
+
+    <button id="iLikeOrange" onclick="document.getElementById('theOnlyHeadingLol').style.color='orange'"> I like orange </button>
+
+    <button id="itsThisOneTrustMe" onclick="itsThisOne()"> Trust me its this one </button>
+
+    <button id="duck" onclick="alert('🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆🦆')"> DUCK! </button>
+
+    <button id="elonMusk" onclick="document.getElementById('muskMan').style.display='inline'"> Elon? </button>
+
+    <button id="redVented" onclick="document.getElementById('theImposter').style.display='inline'"> Guys red vented. </button>
+
+    <button id="purple" onclick="document.body.style.backgroundColor='Purple'"> Purple </button>
+
+    <button id="iDidTasks" onclick="iDidTasks()"> Do your tasks </button>
+
+    <button id="myCookie" onclick="alert('🍪')"> Here's a cookie 🍪</button>
+
+    <button id="winGame" onclick="youLost()"> Win the game and make the background red! </button>
 
 	  
 	  
