@@ -259,7 +259,53 @@
 
     <button id="winGame" onclick="youLost()"> Win the game and make the background red! </button>
 
-	  
+    <button onclick="document.body.style.backgroundColor = 'green';">
+      Click Me!
+    </button>
+    <button onclick="document.body.style.backgroundColor = 'purple';">
+      Click Me!
+    </button>
+    <button onclick="document.body.style.backgroundColor = 'pink';">
+      Click Me!
+    </button>
+    <button onclick="document.body.style.backgroundColor = 'black';">
+      Click Me!
+    </button>
+    <button onclick="document.body.style.backgroundColor = 'blue';">
+      Click Me!
+    </button>
+    <button onclick="document.body.style.backgroundColor = 'orange';">
+      Click Me!
+    </button>
+    <button onclick="document.body.style.backgroundColor = 'yellow';">
+      Click Me!
+    </button>
+    <button onclick="document.body.style.backgroundColor = 'cyan';">
+      Click Me!
+    </button>
+    <button onclick="document.body.style.backgroundColor = 'lightgreen';">
+      Click Me!
+    </button>
+    <button onclick="document.body.style.backgroundColor = 'brown';">
+      Click Me!
+    </button>
+    <button onclick="document.body.style.backgroundColor = 'red';">
+      Click Me!
+    </button>
+
+    <img id="broom" src="broom" style="display:none;" />
+    <button id="broomstick" onclick="picture()">CLick Me!</button> <br />
+
+    <img id="DripTrump1" src="broom" style="display:none;" /> <br />
+    <p2>
+      (Click here to fix picture)
+    </p2>
+    <button type="button" onclick="window.location.reload();">Close</button>
+	  <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
 	  
 	  
 	  
@@ -338,9 +384,12 @@
      function spin() {
            document.body.style.animation="spin 3s";
      }
-
-
-
+      function picture() {
+        var pic =
+          "https://cdn.glitch.com/2f417d86-1f9a-47aa-a549-e6cf386ca47e%2Farab-broom.png?v=1607196755934";
+        document.getElementById("broom").src = pic.replace("90x90", "225x225");
+        document.getElementById("broom").style.display = "block";
+      }
 
     </script>
   </body>
