@@ -18,6 +18,45 @@
       img.Juan {
         display: none;
       }
+	.buttonStyle {
+	  color: black;
+	  text-align: center;
+	  padding: 32px;
+	  border-color: orange;
+	  font-size: 75%;
+	  transition: font-size 2s;
+	}
+	.button:hover {
+	  font-size: 100%;
+	}
+	.button4 {
+	  transition: padding 2s;
+	}
+	.button4:hover {
+	  padding: 10px
+	}
+	.button5:hover {
+	  background-color: orange;
+	}
+	.button6:hover {
+	  position: relative;
+	  top: 20px;
+	}
+	.button7 {
+	  transition: transform 2s;
+	}
+	.button7:hover {
+	  transform: rotate(180deg);
+	}
+	.button8 {
+	  transition: transform 2s;
+	}
+	.button8:hover {
+	  transform: rotateY(180deg);
+	}
+	.pHello {
+	  display: none;
+	}
       #hidden1 {
 			display: none;
 		}
@@ -392,5 +431,20 @@
       }
 
     </script>
+	<script src="script.js"></script>
+    	<h1 id ="header">Find the button that turns the background red<h1>
+    	<button id ="button8Click" class = "buttonStyle" onclick= "document.getElementById('header').style.color = 'lightblue'">Click me</button>
+    	<button id = "buttonColor" class = "buttonStyle" onclick= "document.body.style.backgroundColor = 'red'">Click me</button>
+    	<button class = "buttonStyle" onclick= "document.getElementById('header').style.textAlign = 'right'">Click me</button>
+    	<button id = "buttonDisplay" class = "buttonStyle button4" onclick= "document.getElementById('hiddenText').style.display = 'block'">Click me</button>
+    	<button class = "buttonStyle button5" onclick= "document.getElementById('header').style.fontFamily = 'Helvetica'">Click me</button>
+    	<button class = "buttonStyle button6" onclick= "document.getElementById('buttonDisplay').style.display = 'none'">Click me</button>
+    	<button class = "buttonStyle button7" onclick= "document.getElementById('header').style.transform = 'rotate(180deg)'">Click me</button>
+    	<button class = "buttonStyle button8" onclick= "document.getElementById('buttonColor').style.backgroundColor = 'red'">Click me</button>
+    	<button id = "buttonShadow" class = "buttonStyle" onclick= "document.getElementById('buttonRadius').style.borderRadius = '90px'">Click me</button>
+    	<button id = "buttonRadius" class = "buttonStyle" onclick= "document.getElementById('buttonGradient').style.backgroundImage = 'linear-gradient(red, yellow)'">Click me</button>
+    	<button id = "buttonTextShadow" class = "buttonStyle" onclick= "document.getElementById('buttonShadow').style.boxShadow = '3px 3px gray'">Click me</button>
+    	<button id = "buttonGradient" class = "buttonStyle" onclick= "document.getElementById('buttonTextShadow').style.textShadow = '2px 2px gray'">Click me</button>
+    	<p id = "hiddenText" class = "pHello">Hello</p>
   </body>
 </html>
